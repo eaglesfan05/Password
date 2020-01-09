@@ -28,12 +28,14 @@ generate.addEventListener("click",function(e){
 
 // Write password to the #password input//
 function writePassword(l,characters) {
-  pwd = '';
-
-  for (var i = 0; i<1; i++){
-    pwd = pwd + characters.charAt(Math.floor(Math.random() * characters.length));
+  var pwd = '';
+//loop through character list for entered length and iterate through to generate password
+  for (var i = 0; i<l; i++){
+    pwd += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+     return pwd;
   }
-  return pwd;
-}
+  
+
 
 
